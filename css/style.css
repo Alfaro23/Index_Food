@@ -502,13 +502,12 @@ template {
 }
 
 .no-webp .slide {
-  background: -webkit-gradient(linear, left top, right top, color-stop(40.45%, rgba(0, 0, 0, 0.43)), to(rgba(0, 0, 0, 0))), url("../img/slide1.jpg");
-  background: -o-linear-gradient(left, rgba(0, 0, 0, 0.43) 40.45%, rgba(0, 0, 0, 0) 100%), url("../img/slide1.jpg");
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0.43) 40.45%, rgba(0, 0, 0, 0) 100%), url("../img/slide1.jpg"); }
+  background: -webkit-gradient(linear, left top, right top, color-stop(40.45%, rgba(0, 0, 0, 0.43)), to(rgba(0, 0, 0, 0))), url("../img/slide1.jpg") center/cover no-repeat;
+  background: -o-linear-gradient(left, rgba(0, 0, 0, 0.43) 40.45%, rgba(0, 0, 0, 0) 100%), url("../img/slide1.jpg") center/cover no-repeat;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.43) 40.45%, rgba(0, 0, 0, 0) 100%), url("../img/slide1.jpg") center/cover no-repeat; }
 
 .slide {
   padding: 76px 0;
-  background-size: 100% 100%;
   border-radius: 20px;
   color: #FFF;
   position: relative;
@@ -518,22 +517,14 @@ template {
 }
 
 .no-webp .slide-second {
-  background: -webkit-gradient(linear, left top, right top, color-stop(40.45%, rgba(0, 0, 0, 0.43)), to(rgba(0, 0, 0, 0))), url("../img/slide2.jpg");
-  background: -o-linear-gradient(left, rgba(0, 0, 0, 0.43) 40.45%, rgba(0, 0, 0, 0) 100%), url("../img/slide2.jpg");
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0.43) 40.45%, rgba(0, 0, 0, 0) 100%), url("../img/slide2.jpg"); }
-
-.slide-second {
-  background-size: 100% 100%;
-}
+  background: -webkit-gradient(linear, left top, right top, color-stop(40.45%, rgba(0, 0, 0, 0.43)), to(rgba(0, 0, 0, 0))), url("../img/slide2.jpg") center/cover no-repeat;
+  background: -o-linear-gradient(left, rgba(0, 0, 0, 0.43) 40.45%, rgba(0, 0, 0, 0) 100%), url("../img/slide2.jpg") center/cover no-repeat;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.43) 40.45%, rgba(0, 0, 0, 0) 100%), url("../img/slide2.jpg") center/cover no-repeat; }
 
 .no-webp .slide-third {
-  background: -webkit-gradient(linear, left top, right top, color-stop(40.45%, rgba(0, 0, 0, 0.43)), to(rgba(0, 0, 0, 0))), url("../img/slide3.png");
-  background: -o-linear-gradient(left, rgba(0, 0, 0, 0.43) 40.45%, rgba(0, 0, 0, 0) 100%), url("../img/slide3.png");
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0.43) 40.45%, rgba(0, 0, 0, 0) 100%), url("../img/slide3.png"); }
-
-.slide-third {
-  background-size: 100% 100%;
-}
+  background: -webkit-gradient(linear, left top, right top, color-stop(40.45%, rgba(0, 0, 0, 0.43)), to(rgba(0, 0, 0, 0))), url("../img/slide3.png") center/cover no-repeat;
+  background: -o-linear-gradient(left, rgba(0, 0, 0, 0.43) 40.45%, rgba(0, 0, 0, 0) 100%), url("../img/slide3.png") center/cover no-repeat;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.43) 40.45%, rgba(0, 0, 0, 0) 100%), url("../img/slide3.png") center/cover no-repeat; }
 
 .slide__name {
   font-weight: 700;
@@ -686,21 +677,20 @@ template {
 }
 
 .no-webp .card-ofers__first {
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../img/sweet_busket.png");
-  background: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/sweet_busket.png");
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/sweet_busket.png"); }
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../img/sweet_busket.png") center/cover no-repeat;
+  background: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/sweet_busket.png") center/cover no-repeat;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/sweet_busket.png") center/cover no-repeat; }
 
 .card-ofers__first {
   padding: 36px 313px 31px 32px;
   border-radius: 20px;
-  background-size: 100% 100%;
   overflow: hidden;
 }
 
 .no-webp .card-ofers__second {
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../img/min_try.png");
-  background: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/min_try.png");
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/min_try.png"); }
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../img/min_try.png") center/cover no-repeat;
+  background: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/min_try.png") center/cover no-repeat;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/min_try.png") center/cover no-repeat; }
 
 .card-ofers__second {
   border-radius: 20px;
@@ -2295,10 +2285,6 @@ body {
   font-family: Roboto, sans-serif;
 }
 
-.webp {
-  background-size: 100% 100%;
-}
-
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -2312,7 +2298,6 @@ body {
 
 @media (max-width: 1200px) {
   .slide {
-    background-size: 100% 100%;
     margin-bottom: calc(20px + 30 * ((100vw - 320px) / 1600));
   }
 
@@ -2648,15 +2633,15 @@ body {
   }
 }
 
-.webp .slide { background: -webkit-gradient(linear, left top, right top, color-stop(40.45%, rgba(0, 0, 0, 0.43)), to(rgba(0, 0, 0, 0))), url(../img/slide1.webp); background: -o-linear-gradient(left, rgba(0, 0, 0, 0.43) 40.45%, rgba(0, 0, 0, 0) 100%), url(../img/slide1.webp); background: linear-gradient(90deg, rgba(0, 0, 0, 0.43) 40.45%, rgba(0, 0, 0, 0) 100%), url(../img/slide1.webp); }
+.webp .slide { background: -webkit-gradient(linear, left top, right top, color-stop(40.45%, rgba(0, 0, 0, 0.43)), to(rgba(0, 0, 0, 0))), url(../img/slide1.webp) center/cover no-repeat; background: -o-linear-gradient(left, rgba(0, 0, 0, 0.43) 40.45%, rgba(0, 0, 0, 0) 100%), url(../img/slide1.webp) center/cover no-repeat; background: linear-gradient(90deg, rgba(0, 0, 0, 0.43) 40.45%, rgba(0, 0, 0, 0) 100%), url(../img/slide1.webp) center/cover no-repeat; }
 
-.webp .slide-second { background: -webkit-gradient(linear, left top, right top, color-stop(40.45%, rgba(0, 0, 0, 0.43)), to(rgba(0, 0, 0, 0))), url(../img/slide2.webp); background: -o-linear-gradient(left, rgba(0, 0, 0, 0.43) 40.45%, rgba(0, 0, 0, 0) 100%), url(../img/slide2.webp); background: linear-gradient(90deg, rgba(0, 0, 0, 0.43) 40.45%, rgba(0, 0, 0, 0) 100%), url(../img/slide2.webp); }
+.webp .slide-second { background: -webkit-gradient(linear, left top, right top, color-stop(40.45%, rgba(0, 0, 0, 0.43)), to(rgba(0, 0, 0, 0))), url(../img/slide2.webp) center/cover no-repeat; background: -o-linear-gradient(left, rgba(0, 0, 0, 0.43) 40.45%, rgba(0, 0, 0, 0) 100%), url(../img/slide2.webp) center/cover no-repeat; background: linear-gradient(90deg, rgba(0, 0, 0, 0.43) 40.45%, rgba(0, 0, 0, 0) 100%), url(../img/slide2.webp) center/cover no-repeat; }
 
-.webp .slide-third { background: -webkit-gradient(linear, left top, right top, color-stop(40.45%, rgba(0, 0, 0, 0.43)), to(rgba(0, 0, 0, 0))), url(../img/slide3.webp); background: -o-linear-gradient(left, rgba(0, 0, 0, 0.43) 40.45%, rgba(0, 0, 0, 0) 100%), url(../img/slide3.webp); background: linear-gradient(90deg, rgba(0, 0, 0, 0.43) 40.45%, rgba(0, 0, 0, 0) 100%), url(../img/slide3.webp); }
+.webp .slide-third { background: -webkit-gradient(linear, left top, right top, color-stop(40.45%, rgba(0, 0, 0, 0.43)), to(rgba(0, 0, 0, 0))), url(../img/slide3.webp) center/cover no-repeat; background: -o-linear-gradient(left, rgba(0, 0, 0, 0.43) 40.45%, rgba(0, 0, 0, 0) 100%), url(../img/slide3.webp) center/cover no-repeat; background: linear-gradient(90deg, rgba(0, 0, 0, 0.43) 40.45%, rgba(0, 0, 0, 0) 100%), url(../img/slide3.webp) center/cover no-repeat; }
 
-.webp .card-ofers__first { background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(../img/sweet_busket.webp); background: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/sweet_busket.webp); background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/sweet_busket.webp); }
+.webp .card-ofers__first { background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(../img/sweet_busket.webp) center/cover no-repeat; background: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/sweet_busket.webp) center/cover no-repeat; background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/sweet_busket.webp) center/cover no-repeat; }
 
-.webp .card-ofers__second { background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(../img/min_try.webp); background: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/min_try.webp); background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/min_try.webp); }
+.webp .card-ofers__second { background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(../img/min_try.webp) center/cover no-repeat; background: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/min_try.webp) center/cover no-repeat; background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/min_try.webp) center/cover no-repeat; }
 
 .webp .category__card_zog { background-image: url(../img/zog.webp); }
 
