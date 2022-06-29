@@ -1,12 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+    <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Корзина</title>
+
+    <link rel="stylesheet" href="css/style.min.css?_v=20220629155511">
 </head>
 <body>
-    
+    <div class="container">
+    <header class="header">
+        <div class="logo">
+            <a href="../index.html">
+                <img src="./img/logo.svg" alt="logo" class="logo__img logo__img_header">
+            </a>
+            <span class="logo__text logo__text_header">ИНДЕКС ЕДА</span>
+        </div>
+        <div class="header__search">
+            <input type="text" placeholder="Блюда" class="header__input">
+            <img src="./img/search-icon.svg" alt="Search" class="header__searchIcon">
+        </div>
+        <div class="header__buttons">
+            <button class="button button_header">Войти</button>
+            <a href="../busket.html" class="header__busket">
+                <img src="./img/fi-rr-shopping-cart.svg" alt="Buscket">
+                <span class="header__busketLimit">12</span>
+            </a>
+        </div>
+    </header>
+</div>
+
+    <main>
+        <div class="container">
+            <section class="cart">
+                <h2 class="cart__title">Корзина</h2>
+                <div class="cart-part">
+                    <div class="cart-cards">
+                        <div class="cart-card">
+                            <picture><source srcset="./img/tiriyaki.webp" type="image/webp"><img src="./img/tiriyaki.png" alt="food" width="260px" height="220" class="cart-card__image"></picture>
+                            <div class="card-info">
+                                <p class="card-info__name">Курица под соусом Терияки</p>
+                                <p class="card-info__descrption">Сочная курица под соусом Терияки с овощами.</p>
+                                <div class="card-mass">
+                                    <button class="card-mass__button card-mass__button_left"><img src="./img/minus.svg" alt="minus"></button>
+                                    <p class="card-mass__text">500 гр</p>
+                                    <button class="card-mass__button card-mass__button_right"><img src="./img/plus.svg" alt="minus"></button>
+                                </div>
+                                <p class="card-info__price">365 ₽</p>
+                            </div>
+                            <img src="./img/trash.svg" alt="trash" class="card-info__trash">
+                        </div>
+                        <div class="cart-card">
+                            <picture><source srcset="./img/tiriyaki.webp" type="image/webp"><img src="./img/tiriyaki.png" alt="food" width="260px" height="220" class="cart-card__image"></picture>
+                            <div class="card-info">
+                                <p class="card-info__name">Курица под соусом Терияки</p>
+                                <p class="card-info__descrption">Сочная курица под соусом Терияки с овощами.</p>
+                                <div class="card-mass">
+                                    <button class="card-mass__button card-mass__button_left"><img src="./img/minus.svg" alt="minus"></button>
+                                    <p class="card-mass__text">500 гр</p>
+                                    <button class="card-mass__button card-mass__button_right"><img src="./img/plus.svg" alt="minus"></button>
+                                </div>
+                                <p class="card-info__price">365 ₽</p>
+                            </div>
+                            <img src="./img/trash.svg" alt="trash" class="card-info__trash">
+                        </div>
+                    </div>
+                    <div class="card-total">
+                        <p class="card-total__name">У вас 2 товара</p>
+                        <table class="card-total__table">
+                            <tr class="card-total__row">
+                                <td class="card-total__text">Количество:</td>
+                                <td class="card-total__text card-total__text_right">2 продукта</td>
+                            </tr>
+                            <tr class="card-total__row">
+                                <td class="card-total__text">Вес:</td>
+                                <td class="card-total__text card-total__text_right">1 кг</td>
+                            </tr>
+                            <tr class="card-total__row">
+                                <td class="card-total__text">Сумма заказа:</td>
+                                <td class="card-total__text card-total__text_right">730 ₽</td>
+                            </tr>
+                        </table>
+                        <button class="button button_busket">Оформить заказ</button>
+                        <a href="#" class="card-total__clear">Очистить корзину</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <section class="recomendation">
+            <div class="container">
+                <h2 class="recomendation__title">Рекомендуем посмотреть</h2>
+                <div class="recomendation-food">
+                    <div class="recomendation-card">
+                        <picture><source srcset="./img/tiriyaki.webp" type="image/webp"><img src="./img/tiriyaki.png" class="recomendation-card__image" width="177px" height="199px" alt="teriyaki"></picture>
+                        <div class="recomendation-info">
+                            <p class="recomendation-info__name">Курица 
+                                под соусом Тер...</p>
+                            <div class="recomendation-text">
+                                <span class="recomendation-text__price">365 ₽</span>
+                                <span class="recomendation-text__mass">1 кг</span>
+                            </div> 
+                            <button class="button button_category">В корзину</button>
+                        </div>
+                    </div>
+                    <div class="recomendation-card">
+                        <picture><source srcset="./img/tiriyaki.webp" type="image/webp"><img src="./img/tiriyaki.png" class="recomendation-card__image" width="177px" height="199px" alt="teriyaki"></picture>
+                        <div class="recomendation-info">
+                            <p class="recomendation-info__name">Курица 
+                                под соусом Тер...</p>
+                            <div class="recomendation-text">
+                                <span class="recomendation-text__price">365 ₽</span>
+                                <span class="recomendation-text__mass">1 кг</span>
+                            </div> 
+                            <button class="button button_category">В корзину</button>
+                        </div>
+                    </div>
+                    <div class="recomendation-card">
+                        <picture><source srcset="./img/tiriyaki.webp" type="image/webp"><img src="./img/tiriyaki.png" class="recomendation-card__image" width="177px" height="199px" alt="teriyaki"></picture>
+                        <div class="recomendation-info">
+                            <p class="recomendation-info__name">Курица 
+                                под соусом Тер...</p>
+                            <div class="recomendation-text">
+                                <span class="recomendation-text__price">365 ₽</span>
+                                <span class="recomendation-text__mass">1 кг</span>
+                            </div> 
+                            <button class="button button_category">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-wrapper">
+    <div class="container">
+        <div class="footer">
+            <div class="footer-info">
+                <div class="logo">
+                    <img src="./img/logo.svg" alt="logo" class="logo__img">
+                    <span class="logo__text">ИНДЕКС ЕДА</span>
+                </div>
+                <p class="footer-info__text">
+                    <a href="#" class="footer-info__link">Доставка и оплата</a>
+                    <a href="#" class="footer-info__link">Напишите нам</a>
+                </p>
+            </div>
+            <div class="contacts">
+                <div class="contacts__block">
+                    <img src="./img/telegram.svg" alt="telegram" class="contacts__img">
+                </div>
+                <div class="contacts__block">
+                    <img src="./img/vk.svg" alt="telegram" class="contacts__img">
+                </div>
+                <div class="contacts__block">
+                    <img src="./img/instagram.svg" alt="telegram" class="contacts__img">
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
 </body>
 </html>
