@@ -1,0 +1,270 @@
+.cart{
+    margin-bottom: 86px;
+    &__title{
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 23px;
+        margin: 35px 0 40px 0;
+    }
+
+    &-card{
+        display: flex;
+        filter: drop-shadow(0px 4px 40px rgba(0, 0, 0, 0.1));
+        background: #FFFFFF;
+        border: 1px solid #E9E9E9;
+        border-radius: 20px;
+        margin-bottom: 25px;
+    }
+
+    &-part{
+        display: flex;
+        justify-content: flex-start;
+    }
+    &-cards{
+        margin-right: 36px;
+        flex: 1;
+    }
+}
+
+.card{
+
+    &-info{
+        position: relative;
+        &__name{
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 23px;
+            margin: 29px 0 11px 0;
+        }
+        &__descrption{
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 23px;
+            color: #97979F;
+            margin-bottom: 40px;
+        }
+        &__price{
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 23px;
+            margin-bottom: 25px;
+        }
+        &__trash{
+            position: absolute;
+            top: 20px;
+            right: 25px;
+            cursor: pointer;
+        }
+    }
+    &-mass{
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+
+        &__button{
+            border: 1px solid #000000;
+            background: #fff;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            border-radius: 5px;
+            padding: 10px 11px;
+
+            &_left{
+                padding: 16px 11px;
+            }
+            
+        }
+        &__text{
+            margin: 0 28px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 23px;
+        }
+    }
+
+    &-total{
+        background: #FFFFFF;
+        border: 1px solid #E9E9E9;
+        box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1);
+        border-radius: 20px;
+        padding: 0 17px 0 23px;
+        display: flex;
+        flex-direction: column;
+        margin-right: 30px;    
+        max-height: 370px; 
+
+        &__name{
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 23px;
+            margin: 24px 0;
+        }
+        &__table{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 23px;
+            color: #77777B;
+            margin-bottom: 26px;
+        }
+        &__row{
+            margin-bottom: 10px;
+            
+        }
+        &__text{
+
+            &:first-child{
+                padding-right: 128px;
+            }
+           
+
+           &_right{
+            text-align: end;
+           }
+            
+        }
+        &__clear{
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 23px;
+            color: #000000;
+            text-align: center;
+            margin-top: 22px;
+        }
+    }
+}
+
+@media (max-width: 1200px){
+    .cart{
+        @include adaptiveSize("margin-bottom", 86, 30,0);
+        
+        &__title{
+            @include adaptiveSize("font-size", 32, 25,0);
+            @include adaptiveSize("margin-top", 35, 18,0);
+            @include adaptiveSize("margin-bottom", 40, 20,0);
+        }
+        &-card{
+            @include adaptiveSize("margin-bottom", 25, 10,0);
+
+            &__image{
+                @include adaptiveSize("width", 260, 120,0);
+                @include adaptiveSize("height", 220, 100,0);
+            }
+        }
+        &-cards{
+            @include adaptiveSize("margin-right", 36, 20,0);
+        }
+    }
+    .card{
+
+        &-info{
+            &__name{
+                @include adaptiveSize("font-size", 24, 18,0);
+                @include adaptiveSize("margin-top", 29, 13,0);
+                @include adaptiveSize("margin-bottom", 11, 5,0);
+            }
+            &__descrption{
+                @include adaptiveSize("font-size", 16, 12,0);
+                @include adaptiveSize("margin-bottom", 40, 18,0);
+            }
+            &__price{
+                @include adaptiveSize("font-size", 24, 15,0);
+                @include adaptiveSize("margin-bottom", 25, 10,0);
+            }
+            
+        }
+        &-mass{
+            @include adaptiveSize("margin-bottom", 15, 5,0);
+    
+            &__text{
+                @include adaptiveSize("margin-left", 28, 12,0);
+                @include adaptiveSize("margin-right", 28, 12,0);
+                @include adaptiveSize("font-size", 16, 12,0);
+            }
+        }
+    
+        &-total{
+            @include adaptiveSize("padding-left", 17, 8,0);
+            @include adaptiveSize("padding-right", 23, 13,0);
+            @include adaptiveSize("margin-right", 30, 15,0); 
+    
+            &__name{
+                @include adaptiveSize("font-size", 20, 13,0);
+                @include adaptiveSize("margin-top", 24, 12,0);
+                @include adaptiveSize("margin-bottom", 24, 12,0);
+            }
+            &__table{
+                @include adaptiveSize("font-size", 16, 12,0);
+                @include adaptiveSize("margin-bottom", 26, 13,0);
+            }
+            &__row{
+                @include adaptiveSize("margin-bottom", 10, 5,0);
+            }
+            &__text{
+    
+                &:first-child{
+                    @include adaptiveSize("padding-right", 128, 50,0);
+                }
+                
+            }
+            &__clear{
+                @include adaptiveSize("font-size", 16, 10,0);
+                @include adaptiveSize("margin-top", 22, 11,0);
+            }
+        }
+    }
+}
+
+@media (max-width: 880px){
+    .cart{
+        &-part{
+            flex-direction: column;
+        }
+        &-cards{
+            margin-right: 0;
+        }
+    }
+    .card{
+        &-total{
+            margin-right: 0;
+        }
+        &-mass{
+            &__button{
+                @include adaptiveSize("padding-left", 11, 6,0);
+                @include adaptiveSize("padding-right", 11, 6,0);
+                @include adaptiveSize("padding-top", 10, 5,0);
+                @include adaptiveSize("padding-bottom", 10, 5,0);
+                &_left{
+                    @include adaptiveSize("padding-left", 11, 6,0);
+                    @include adaptiveSize("padding-right", 11, 6,0);
+                    @include adaptiveSize("padding-top", 16, 8,0);
+                    @include adaptiveSize("padding-bottom", 16, 8,0);
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 880px){
+    .card{
+        &-info{
+            &__trash{
+                @include adaptiveSize("top", 80, 130,0);
+                right: 25px;
+            }
+        }
+    }
+}
+@media (max-width: 350px){
+    .card{
+        &-info{
+            &__trash{
+                @include adaptiveSize("top", 80, 170,0);
+                right: 25px;
+            }
+        }
+    }
+}

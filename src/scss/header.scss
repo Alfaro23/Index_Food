@@ -1,0 +1,96 @@
+$fontWeidth : 400;
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0;
+
+    &__search{
+        display: flex;
+        background: rgba(238, 238, 238, 0.71);
+        border-radius: 10px;
+        min-width: 620px;
+        justify-content: space-between;
+        padding: 15px;
+
+    }
+    &__input{
+        flex: 1;
+        border: none;
+        outline: none;
+        background-color: inherit;
+        font-weight: $fontWeidth;
+        font-size: 16px;
+        line-height: 23px;
+
+        ::placeholder{
+            color: #57565B;
+            font-weight: $fontWeidth;
+            font-size: 16px;
+            line-height: 23px;
+        }
+    }
+    &__searchIcon{
+        cursor: pointer;
+    }
+
+    &__buttons{
+        display: flex;
+        align-items: center;
+    }
+    &__enter{
+        background: #EBEBEB;
+        border-radius: 50px;
+        font-weight: $fontWeidth;
+        font-size: 14px;
+        line-height: 16px;
+        padding: 16px 30px;
+        cursor: pointer;
+        border: none;
+        margin-right: 30px;
+    }
+    &__busket{
+        border-radius: 50%;
+        padding: 12px 13px;
+        background: #F66A15;
+        border: none;
+        position: relative;
+    }
+    &__busketLimit{
+        position: absolute;
+        font-weight: $fontWeidth;
+        font-size: 8px;
+        line-height: 9px;
+        background: #FFAF19;
+        border-radius: 50%;
+        padding: 5px;
+        bottom: -5px;
+        right: 0;
+        cursor: pointer;
+    }
+}
+
+@media screen and(max-width: 1024px){
+    .header{
+        &__search{
+            min-width: 400px;
+        }
+    }
+}
+
+@media screen and(max-width: 800px){
+    .header{
+        &__search{
+            min-width: 200px;
+        }
+    }
+}
+
+@media screen and(max-width: 500px){
+    .header{
+        &__search{
+            display: none;
+        }
+    }
+}

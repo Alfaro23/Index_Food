@@ -1,0 +1,72 @@
+.button{
+    border-radius: 25px;
+    font-weight: $fontWeidth;
+    font-size: 14px;
+    line-height: 23px;
+    padding: 13px 53px;
+    border: none;
+    background: #EBEBEB;
+    border: 2px solid transparent;
+    cursor: pointer;
+    text-decoration: none;
+
+    &_card-ofers{
+        transition: .5s;
+        &:hover{
+            border-color: #5F5F61;
+            transition: .5s;
+        }
+    }
+    
+    &_busket{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 23px;
+        color: #77777B;
+    }
+
+    &_orange{
+        background: #F47322;
+        color: #FFF;
+    }
+    &_header{
+        border-radius: 50px;
+        line-height: 16px;
+        padding: 16px 30px;
+        margin-right: 30px;
+        transition: .5s;
+
+        &:hover{
+            transition: .5s;
+            border-color: #5F5F61;
+        }
+    }
+
+    &_category{
+        color: #F37321;
+        border: 2px solid #F37321;
+        background-color: #FFF;
+        padding: 16px 24px;
+        border-radius: 33px;
+        transition: 1s;
+
+        &:hover{
+            color: #fff;
+            background: #FFA871;
+            transition: 1s;
+            border: 2px solid transparent;
+        }
+    }
+    &_footer{
+        margin: 0 auto;
+        padding: 16px 105px;
+    }
+}
+
+@media screen and(max-width: 600px) {
+    .button{
+        &_category{
+            padding: 8px 12px;
+        }
+    }
+}

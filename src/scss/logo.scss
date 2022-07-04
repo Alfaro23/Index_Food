@@ -1,0 +1,44 @@
+.logo{
+    display: flex;
+    align-items: center;
+
+    &__img{
+        margin-right: 11px;
+
+        &_header{
+            width: 58px;
+            height: 58px;
+        }
+    }
+    &__text{
+        max-width: 93px;
+        font-weight: 700;
+        font-size: 23px;
+        line-height: 28px;
+
+        &_header{
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 20px;
+        }
+    }
+}
+
+@media screen and(max-width: 800px){
+    .logo{
+        &__text{
+            display: none;
+        }
+    }
+}
+
+@media screen and(max-width: 400px){
+    .logo{
+        &__img{
+            display: none;
+            &_header{
+                display: block;
+            }
+        }
+    }
+}

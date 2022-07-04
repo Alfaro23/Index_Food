@@ -1,0 +1,109 @@
+.recomendation{
+    background: #FBFBFB;
+    padding-top: 35px;
+
+    &__title{
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 23px;
+        margin-bottom: 63px;
+    }
+    &-food{
+        display: flex;
+        flex-wrap: wrap;
+        padding-bottom: 164px;
+    
+    }
+    &-card{
+        width: 30.33%;
+        display: flex;
+        background: #FFFFFF;
+        border: 1px solid #E9E9E9;
+        border-radius: 20px;
+        &:not(:last-child){
+            margin-right: 50px;
+        }
+    }
+    &-info{
+
+
+        &__name{
+            margin: 25px 0 18px 0;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 23px;
+            max-width: 130px;
+        }
+    }
+    &-text{
+        margin-bottom: 16px;
+        display: flex;
+        align-items: center;
+        &__price{
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 23px;
+            margin-right: 20px;
+        }
+        &__mass{
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 23px;
+        }
+    }
+}
+
+@media (max-width:1200px){
+
+.recomendation{
+    @include adaptiveSize("padding-top", 35, 15,0);
+    
+    &__title{
+        @include adaptiveSize("font-size", 32, 25,0);
+        @include adaptiveSize("margin-bottom", 63, 20,0);
+    }
+    &-food{
+        @include adaptiveSize("padding-bottom", 164, 80,0);
+    }
+    &-card{
+        width: 45%;
+        &:not(:last-child){
+            @include adaptiveSize("margin-right", 50, 25,0);
+            @include adaptiveSize("margin-bottom", 50, 20,0);
+        }
+        &__image{
+            @include adaptiveSize("width", 177, 100,0);
+            @include adaptiveSize("height", 199, 120,0);
+        }
+    }
+    &-info{
+        &__name{
+            margin: 25px 0 18px 0;
+            @include adaptiveSize("margin-top", 25, 10,0);
+            @include adaptiveSize("margin-bottom", 18, 8,0);
+            @include adaptiveSize("font-size", 16, 8,0);
+        }
+    }
+    &-text{
+        @include adaptiveSize("margin-bottom", 16, 8,0);
+        &__price{
+            @include adaptiveSize("font-size", 24, 12,0);
+            @include adaptiveSize("margin-right", 20, 10,0);
+        }
+        &__mass{
+            @include adaptiveSize("font-size", 16, 8,0);
+        }
+    }
+}
+}
+
+@media (max-width:880px){
+    .recomendation{
+        &-card{
+            width: 100%;
+            &:not(:last-child){
+                margin-right: 0;
+            }
+        }
+    }
+}

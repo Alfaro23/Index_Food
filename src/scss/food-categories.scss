@@ -1,0 +1,238 @@
+.food-wrapper{
+    background-color: #F6F6F6;
+    padding: 40px 0 60px 0;
+}
+
+.food-categories{
+
+    &__title{
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 23px;
+        margin-top: 0;
+        margin-bottom: 50px;
+    }
+
+    &__footer{
+        display: flex;
+        align-items: center;
+    }
+}
+
+.name-categories{
+    margin-bottom: 60px;
+
+    :not(:last-child){
+        margin-right: 60px;
+    }
+
+    &__text{
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 23px;
+        color: #49494F;
+        transition: .5s;
+
+        &:hover{
+            transition: .5s;
+            color: #F37321;
+        }
+
+        &_active{
+            color: #F37321;
+        }
+    }
+}
+
+.food-card{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+
+    &__card{
+        width: 22.65%;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1);
+        border-radius: 20px;
+        overflow: hidden;
+        transition: 1s;
+
+        &:not(:last-child){
+            margin-right: 37px;
+        }
+        &:hover{
+            transform: scale(1.1);
+            transition: 1s;
+        }
+    }
+    &__footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__body{
+        padding: 23px;
+    }
+    &__name{
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 23px;
+        margin-bottom: 13px;
+    }
+    &__description{
+        display: box;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 23px;
+        color: #B9B9BE;
+        margin-bottom: 36px;
+        max-width: 220px;
+        max-height: 90px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+    &__img{
+        width: 100%;
+    }
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+
+    &__price{
+        font-weight: 500;
+        font-size: 23px;
+        line-height: 23px;
+        color: #4B4B51;
+        margin-bottom: 5px;
+    }
+    &__mass{
+        font-weight: 500;
+        font-size: 17px;
+        line-height: 20px;
+        color: #AAAAB1;
+    }
+}
+
+@media (max-width: 1200px){
+    .food-card{
+
+        &__card{
+            width: 22%;
+        }
+        &__name{
+            @include adaptiveSize("font-size", 20, 15,0);
+        }
+    }
+    .food-categories{
+        &__title{
+            @include adaptiveSize("font-size", 32, 25,0);
+        }
+    }
+    .info{
+        &__price{
+            @include adaptiveSize("font-size", 23, 15,0);
+        }
+    }
+    .name-categories{
+
+        &__text{
+            @include adaptiveSize("font-size", 20, 13,0);
+        }
+    }
+    
+}
+@media screen and (max-width: 1024px) {
+    .food-card{
+        display: flex;
+        justify-content: center;
+        
+        &__card{
+            width: 45%;
+            margin-bottom: 20px;
+            margin-right: 45px;
+            &:nth-child(2n){
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+@media screen and(max-width:950px){
+    .food-card{
+        
+        &__card{
+            width: 45%;
+            margin-bottom: 20px;
+            margin-right: 40px;
+        }
+    }
+}
+
+@media screen and(max-width:860px){
+    .food-card{
+        
+        &__card{
+            width: 40%;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@media screen and(max-width: 600px){
+    .info{
+        &__price{
+            font-size: 18px;
+        }
+    }
+    .food-categories{
+        &__title{
+            // font-size: 25px;
+            text-align: center;
+        }
+    }
+}
+
+@media screen and(max-width:550px){
+    .food-card{
+        
+        &__card{
+            width: 41%;
+            margin-bottom: 20px;
+            &:not(:last-child){
+                margin-right: 40px;
+            }
+        }
+    }
+}
+
+@media screen and(max-width: 500px){
+    .food-card{
+        justify-content: center;
+        align-items: center;
+        &__card{
+            width: 90%;
+            &:not(:last-child){
+                margin-right: 0;
+            }
+        }
+    }
+
+    .name-categories{
+    
+        &__text{
+            font-size: 15px;
+        }
+    }
+}
+
+@media screen and(max-width: 420px){
+    .name-categories{
+        &__text{
+            &:not(:last-child){
+                margin-right: 10px;
+           }
+        } 
+    }
+}

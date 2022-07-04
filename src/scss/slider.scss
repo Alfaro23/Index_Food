@@ -1,0 +1,115 @@
+$fontWeightBold: 700;
+
+.slide{
+    padding: 76px 0;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.43) 40.45%, rgba(0, 0, 0, 0) 100%), url("../img/slide1.jpg") center/cover no-repeat;
+    border-radius: 20px;
+    color: #FFF;
+    position: relative;
+    min-width: 0;
+    width: 100%;
+    margin-bottom: 50px;
+
+    &-second{
+        background: linear-gradient(90deg, rgba(0, 0, 0, 0.43) 40.45%, rgba(0, 0, 0, 0) 100%), url("../img/slide2.jpg") center/cover no-repeat;
+    }
+    &-third{
+        background: linear-gradient(90deg, rgba(0, 0, 0, 0.43) 40.45%, rgba(0, 0, 0, 0) 100%), url("../img/slide3.png") center/cover no-repeat;
+    }
+
+    &__name{
+        font-weight: $fontWeightBold;
+        font-size: 50px;
+        line-height: 51px;
+        font-style: normal;
+        max-width: 406px;
+        margin: 0 0 15px 0;
+    }
+    &__description{
+        font-style: normal;
+        font-weight: $fontWeightBold;
+        font-size: 16px;
+        line-height: 23px;
+        margin: 0 0 32px 0;
+        max-width: 388px;
+    }
+    &__button{
+        background: #F47322;
+        border-radius: 25px;
+        font-weight: $fontWeidth;
+        font-size: 14px;
+        line-height: 23px;
+        padding: 13px 53px;
+        border: none;
+        color: #FFF;
+        cursor: pointer;
+    }
+    &__content{
+        padding-left: 102px;
+    }
+}
+
+.slide-button{
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    z-index: 12;
+    width: auto;
+
+    &__buttons{
+        border-radius: 50%;
+        border: none;
+        background-color: #EBEBEB;
+        opacity: .7;
+        padding: 8px;
+        cursor: pointer;
+        
+    }
+    &__left{
+        margin-right: 17px;
+    }
+}
+
+.swiper{
+    max-width: 1200px;
+    max-height: 400px;
+    border-radius: 20px;
+    position: relative;
+    // margin-bottom: 50px;
+}
+.swiper-slide{
+    width: 100%;
+}
+
+@media(min-width: 1200px){
+    .swiper{
+        margin-bottom: 50px;
+    }
+}
+@media(max-width: 1200px){
+    .slide{
+        @include adaptiveSize("margin-bottom", 50, 20,0);
+
+        &__content{
+            @include adaptiveSize("padding-left", 102, 20,0);
+            @include adaptiveSize("padding-right", 30, 20,0);
+            padding-right: 20px;
+        }
+        &__name{
+            @include adaptiveSize("font-size", 50, 20,0);
+        }
+        &__description{
+            @include adaptiveSize("font-size", 16, 14,0);
+        }
+    }
+    .slide-button{
+        @include adaptiveSize("bottom", 40, 80,0);
+    }
+    
+}
+
+@media screen and(max-width: 450px){
+    .slide-button{
+        display: none;
+    }
+}

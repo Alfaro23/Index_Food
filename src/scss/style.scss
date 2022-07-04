@@ -1,0 +1,40 @@
+@import "./adaptiveMixin.scss";
+@import 'normalize.css/normalize';
+@import "./header.scss" ;
+@import "./slider.scss";
+@import "./button.scss";
+@import "./card-ofers.scss";
+@import "./category.scss";
+@import "./food-categories.scss";
+@import "./benefits.scss";
+@import "./footer.scss";
+@import "./logo.scss";
+@import "./fonts.scss";
+@import "./product.scss";
+@import "../../node_modules/swiper/swiper-bundle";
+@import "./card";
+@import "./recomendation.scss";
+@import "./enter.scss";
+
+body{
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+    
+
+    &.no-scroll{
+        overflow: hidden;
+    }
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+@media (max-width: 1200px) {
+    .container{
+        @include adaptiveSize("padding-left", 50, 20,0);
+        @include adaptiveSize("padding-right", 50, 20,0);
+        max-width: 1000px;
+    }
+}

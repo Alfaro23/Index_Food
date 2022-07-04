@@ -1,0 +1,67 @@
+.card-ofers{
+    margin-bottom: 110px;
+    display: flex;
+    justify-content: space-between;
+    color: #FFFFFF;
+
+    &__first{
+        padding: 36px 313px 31px 32px;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/sweet_busket.png") center/cover no-repeat;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+    &__second{
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/min_try.png") center/cover no-repeat;
+        border-radius: 20px;
+        background-size: 100% 100%;
+        padding: 36px 313px 31px 32px;
+        overflow: hidden;
+    }
+    &__title{
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 23px;
+        margin-bottom: 20px;
+    }
+    &__description{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 23px;
+        max-width: 167px;
+        margin-bottom: 70px;
+    }
+    &__price{
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 23px;
+        margin-bottom: 8px;
+    }
+    &__delivery{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 23px;
+        margin-bottom: 25px;
+    }
+}
+p{
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width: 1200px){
+    .card-ofers{
+        flex-direction: column;
+        @include adaptiveSize("margin-bottom", 110, 30,0);
+        &__first{
+            @include adaptiveSize("margin-bottom", 30, 10,0);
+        }
+        &__first, &__second{
+            padding: 36px 313px 31px 32px;
+            @include adaptiveSize("padding-top", 36, 16,0);
+            @include adaptiveSize("padding-right", 313, 0,0);
+            @include adaptiveSize("padding-bottom", 31, 11,0);
+            @include adaptiveSize("padding-left", 32, 12,0);
+            background-size: 100% 100%;
+        }
+    }
+}
