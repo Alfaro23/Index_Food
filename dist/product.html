@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Куриные крылья</title>
+
+    <link rel="stylesheet" href="css/style.min.css?_v=20220704183834">
+</head>
+<body>
+    <div class="container">
+    <header class="header">
+        <div class="logo">
+            <a href="./index.html">
+                <img src="./img/logo.svg" alt="logo" class="logo__img logo__img_header">
+            </a>
+            <span class="logo__text logo__text_header">ИНДЕКС ЕДА</span>
+        </div>
+        <div class="header__search">
+            <input type="text" placeholder="Блюда" class="header__input">
+            <img src="./img/search-icon.svg" alt="Search" class="header__searchIcon">
+        </div>
+        <div class="header__buttons">
+            <button class="button button_header">Войти</button>
+            <a href="./busket.html" class="header__busket">
+                <img src="./img/fi-rr-shopping-cart.svg" alt="Buscket">
+                <span class="header__busketLimit">12</span>
+            </a>
+        </div>
+    </header>
+</div>
+    <main class="product">
+        <div class="container">
+            <div class="product-back">
+                <span>&lt;</span>  <a href="./index.html" class="product-back__link">Назад</a>
+            </div>
+ 
+            <div class="product-content">
+                <div class="product-card">
+                    <picture><source srcset="./img/tiriyaki.webp" type="image/webp"><img src="./img/tiriyaki.png" alt="" class="product__img" width="340" height="250"></picture>
+                    <div class="product-info">
+                        <p class="star"></p>
+                        <h2 class="product-info__title">Огурчики малосольные</h2>
+                        <p class="product-info__price">
+                            <span class="product-info__cost">95 ₽</span>
+                            <span class="product-info__mass">500 гр</span>
+                        </p>
+                        <div class="product-text">
+                            <ul class="product-text__list">
+                                <li><button class="product-text__item product-text__item_active">Описание</button></li>
+                                <li><button class="product-text__item">Отзывы</button></li>
+                            </ul>
+                            <ul class="product-text__text">
+                                <li class="product-text__description">
+                                    Соус Терияки придумали повара из Японии. 
+                                    По традиции его используют в качестве маринада 
+                                    для блюд из курицы, мясо которых приобретает необыкновенный вкус, цвет и аромат.
+                                </li>
+                                <li class="product-text__reviews"></li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="program-info">
+                    <button class="button button_orange">Добавить в корзину</button>
+                    <p class="program-info__bonus">За заказ этого блюда вы получите 1 балл.</p>
+                    <p class="program-info__description">Чтобы использовать специальные предложения и участвовать в <a href="#" class="program-info__link">программе лояльности</a> , войдите в личный кабинет.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer-wrapper">
+    <div class="container">
+        <div class="footer">
+            <div class="footer-info">
+                <div class="logo">
+                    <img src="./img/logo.svg" alt="logo" class="logo__img">
+                    <span class="logo__text">ИНДЕКС ЕДА</span>
+                </div>
+                <p class="footer-info__text">
+                    <a href="#" class="footer-info__link">Доставка и оплата</a>
+                    <a href="#" class="footer-info__link">Напишите нам</a>
+                </p>
+            </div>
+            <div class="contacts">
+                <div class="contacts__block">
+                    <img src="./img/telegram.svg" alt="telegram" class="contacts__img">
+                </div>
+                <div class="contacts__block">
+                    <img src="./img/vk.svg" alt="telegram" class="contacts__img">
+                </div>
+                <div class="contacts__block">
+                    <img src="./img/instagram.svg" alt="telegram" class="contacts__img">
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<script src="js/index.min.js?_v=20220704183834" defer></script>
+    <div class="enter hidden">
+    <div class="enter-content">
+
+        <div class="enter-header">
+            <p class="enter-content__name">Вход</p>
+
+            <div class="enter-cross">
+                <button class="nav">
+                    <span></span>
+                    <span></span>
+                    <!-- <span></span> -->
+                </button>
+            </div>
+        </div>
+        
+        <form action="#" class="enter-form">
+            <div class="enter-email">
+                <label for="email" class="enter-email__name">Email:</label>
+                <input type="email" class="enter-email__input" id="email">
+            </div>
+            
+            <div class="enter-passwordForm">
+                <a href="#" class="enter-passwordForm__text">Забыли пароль?</a>
+                <div class="enter-password">
+                    <label for="password" class="enter-password__name">Password:</label>
+                    <input type="password" class="enter-password__input" id="password">
+                </div>
+            </div>
+
+            <div class="enter-chekbox">
+                <input type="checkbox" class="enter-chekbox__input" id="checkbox">
+                <label for="checkbox" class="enter-chekbox__text">Запомнить логин и пароль?</label>
+            </div>
+
+            <div class="enter-registration">
+                <p class="enter-registration__text">Нет аккаунта?</p>
+                <a href="#" class="enter-registration__link">Зарегистрироваться</a>
+            </div>
+
+            
+        </form>
+        <div class="enter-footer">
+            <button class="button button_orange">Войти</button>
+        </div>
+    </div>
+</div>
+
+    <!-- <script src="js/index.min.js?_v=20220704183834" defer></script> -->
+</body>
+</html>
