@@ -8,7 +8,7 @@ const benefitsCard__img2 = document.querySelector("#benefits-card__img-2");
 const benefitsCard__img3 = document.querySelector("#benefits-card__img-3");
 const benefitsCard__img4 = document.querySelector("#benefits-card__img-4");
 
-if(benefitsCard1 && benefitsCard2 && benefitsCard3 && benefitsCard4){
+if(benefitsCard1){
   benefitsCard1.addEventListener("mouseover", ()=>{
     benefitsCard__img1.setAttribute("style", "fill: #fff; transition: .5s;");
   });

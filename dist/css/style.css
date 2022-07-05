@@ -2546,7 +2546,9 @@ button.swiper-pagination-bullet {
   transition: 2s;
 }
 
-.enter {
+.enter,
+.reset,
+.reg {
   -webkit-transition: 2s;
   -o-transition: 2s;
   transition: 2s;
@@ -2568,20 +2570,26 @@ button.swiper-pagination-bullet {
           align-items: center;
 }
 
-.enter-content {
+.enter-content,
+.reset-content,
+.reg-content {
   background-color: #fff;
   border-radius: 50px;
   padding: 35px 0px 60px 36px;
 }
 
-.enter-content__name {
+.enter-content__name,
+.reset-content__name,
+.reg-content__name {
   font-weight: 700;
   font-size: 32px;
   line-height: 23px;
   margin-bottom: 70px;
 }
 
-.enter-form {
+.enter-form,
+.reset-form,
+.reg-form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2595,7 +2603,15 @@ button.swiper-pagination-bullet {
   margin: 0 130px;
 }
 
-.enter-email {
+.enter-email,
+.enter-password,
+.enter-nikname,
+.reset-email,
+.reset-password,
+.reset-nikname,
+.reg-email,
+.reg-password,
+.reg-nikname {
   margin-bottom: 37px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2605,23 +2621,76 @@ button.swiper-pagination-bullet {
           align-items: center;
 }
 
-.enter-email__name {
+.enter-email__name,
+.enter-password__name,
+.enter-nikname__name,
+.reset-email__name,
+.reset-password__name,
+.reset-nikname__name,
+.reg-email__name,
+.reg-password__name,
+.reg-nikname__name {
   font-weight: 400;
   font-size: 24px;
   line-height: 23px;
   margin-right: 80px;
 }
 
-.enter-email__input {
+.enter-email__input,
+.enter-password__input,
+.enter-nikname__input,
+.reset-email__input,
+.reset-password__input,
+.reset-nikname__input,
+.reg-email__input,
+.reg-password__input,
+.reg-nikname__input {
   border: 1px solid #F47322;
   border-radius: 10px;
   background: #fff;
-  max-width: 450px;
   padding: 10px 15px;
   width: 450px;
 }
 
-.enter-passwordForm {
+.enter-email__input_email,
+.enter-password__input_email,
+.enter-nikname__input_email,
+.reset-email__input_email,
+.reset-password__input_email,
+.reset-nikname__input_email,
+.reg-email__input_email,
+.reg-password__input_email,
+.reg-nikname__input_email {
+  margin-left: 98px;
+}
+
+.enter-email__input_password,
+.enter-password__input_password,
+.enter-nikname__input_password,
+.reset-email__input_password,
+.reset-password__input_password,
+.reset-nikname__input_password,
+.reg-email__input_password,
+.reg-password__input_password,
+.reg-nikname__input_password {
+  margin-left: 102px;
+}
+
+.enter-email__input_nik,
+.enter-password__input_nik,
+.enter-nikname__input_nik,
+.reset-email__input_nik,
+.reset-password__input_nik,
+.reset-nikname__input_nik,
+.reg-email__input_nik,
+.reg-password__input_nik,
+.reg-nikname__input_nik {
+  margin-left: 55px;
+}
+
+.enter-passwordForm,
+.reset-passwordForm,
+.reg-passwordForm {
   margin-bottom: 33px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2638,7 +2707,9 @@ button.swiper-pagination-bullet {
           justify-content: end;
 }
 
-.enter-passwordForm__text {
+.enter-passwordForm__text,
+.reset-passwordForm__text,
+.reg-passwordForm__text {
   font-weight: 400;
   font-size: 16px;
   line-height: 23px;
@@ -2649,7 +2720,9 @@ button.swiper-pagination-bullet {
           box-shadow: inset 0 -0.25em white, inset 0 -0.3em #F37321;
 }
 
-.enter-password {
+.enter-password,
+.reset-password,
+.reg-password {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2658,23 +2731,28 @@ button.swiper-pagination-bullet {
           align-items: center;
 }
 
-.enter-password__name {
+.enter-password__name,
+.reset-password__name,
+.reg-password__name {
   font-weight: 400;
   font-size: 24px;
   line-height: 23px;
   margin-right: 30px;
 }
 
-.enter-password__input {
+.enter-password__input,
+.reset-password__input,
+.reg-password__input {
   border: 1px solid #F47322;
   border-radius: 10px;
   background: #fff;
-  max-width: 450px;
   padding: 10px 15px;
   width: 450px;
 }
 
-.enter-chekbox {
+.enter-chekbox,
+.reset-chekbox,
+.reg-chekbox {
   margin-bottom: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2684,14 +2762,18 @@ button.swiper-pagination-bullet {
           align-items: center;
 }
 
-.enter-chekbox__text {
+.enter-chekbox__text,
+.reset-chekbox__text,
+.reg-chekbox__text {
   font-weight: 400;
   font-size: 16px;
   line-height: 23px;
   margin-left: 12px;
 }
 
-.enter-registration {
+.enter-registration,
+.reset-registration,
+.reg-registration {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2701,7 +2783,9 @@ button.swiper-pagination-bullet {
   line-height: 23px;
 }
 
-.enter-registration__link {
+.enter-registration__link,
+.reset-registration__link,
+.reg-registration__link {
   text-decoration: none;
   -webkit-box-shadow: inset 0 -0.25em white, inset 0 -0.3em #F37321;
           box-shadow: inset 0 -0.25em white, inset 0 -0.3em #F37321;
@@ -2709,7 +2793,9 @@ button.swiper-pagination-bullet {
   color: #F47322;
 }
 
-.enter-footer {
+.enter-footer,
+.reset-footer,
+.reg-footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2721,19 +2807,27 @@ button.swiper-pagination-bullet {
           justify-content: center;
 }
 
-.enter-header {
+.enter-header,
+.reset-header,
+.reg-header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   position: relative;
 }
 
-.enter-cross {
+.enter-cross,
+.reset-cross,
+.reg-cross {
   position: absolute;
   top: -5px;
   right: 50px;
   width: 30px;
   height: 25px;
+}
+
+.reset-password__input_second {
+  margin-left: 10px;
 }
 
 .nav {
@@ -3172,6 +3266,187 @@ body.no-scroll {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+}
+
+@media (max-width: 1000px) {
+  .reg-password__name {
+    max-width: 120px;
+  }
+
+  .enter-content,
+  .reset-content,
+  .reg-content {
+    padding-top: calc(20px + 15 * ((100vw - 320px) / 1600));
+    padding-bottom: calc(40px + 20 * ((100vw - 320px) / 1600));
+    padding-left: calc(20px + 16 * ((100vw - 320px) / 1600));
+  }
+
+  .enter-content__name,
+  .reset-content__name,
+  .reg-content__name {
+    margin-bottom: calc(50px + 20 * ((100vw - 320px) / 1600));
+    font-size: calc(20px + 12 * ((100vw - 320px) / 1600));
+  }
+
+  .enter-form,
+  .reset-form,
+  .reg-form {
+    margin-left: calc(0px + 130 * ((100vw - 320px) / 1600));
+    margin-right: calc(0px + 130 * ((100vw - 320px) / 1600));
+  }
+
+  .enter-email,
+  .enter-password,
+  .enter-nikname,
+  .reset-email,
+  .reset-password,
+  .reset-nikname,
+  .reg-email,
+  .reg-password,
+  .reg-nikname {
+    margin-bottom: calc(20px + 17 * ((100vw - 320px) / 1600));
+  }
+
+  .enter-email__name,
+  .enter-password__name,
+  .enter-nikname__name,
+  .reset-email__name,
+  .reset-password__name,
+  .reset-nikname__name,
+  .reg-email__name,
+  .reg-password__name,
+  .reg-nikname__name {
+    font-size: calc(18px + 6 * ((100vw - 320px) / 1600));
+    margin-right: calc(40px + 40 * ((100vw - 320px) / 1600));
+  }
+
+  .enter-email__name_in,
+  .enter-password__name_in,
+  .enter-nikname__name_in,
+  .reset-email__name_in,
+  .reset-password__name_in,
+  .reset-nikname__name_in,
+  .reg-email__name_in,
+  .reg-password__name_in,
+  .reg-nikname__name_in {
+    margin-right: calc(50px + 30 * ((100vw - 320px) / 1600));
+  }
+
+  .enter-email__input,
+  .enter-password__input,
+  .enter-nikname__input,
+  .reset-email__input,
+  .reset-password__input,
+  .reset-nikname__input,
+  .reg-email__input,
+  .reg-password__input,
+  .reg-nikname__input {
+    padding-top: calc(5px + 5 * ((100vw - 320px) / 1600));
+    padding-bottom: calc(5px + 5 * ((100vw - 320px) / 1600));
+    padding-left: calc(10px + 5 * ((100vw - 320px) / 1600));
+    padding-right: calc(10px + 5 * ((100vw - 320px) / 1600));
+    width: calc(150px + 300 * ((100vw - 320px) / 1600));
+  }
+
+  .enter-email__input_email,
+  .enter-password__input_email,
+  .enter-nikname__input_email,
+  .reset-email__input_email,
+  .reset-password__input_email,
+  .reset-nikname__input_email,
+  .reg-email__input_email,
+  .reg-password__input_email,
+  .reg-nikname__input_email {
+    margin-left: calc(45px + 53 * ((100vw - 320px) / 1600));
+  }
+
+  .enter-email__input_password,
+  .enter-password__input_password,
+  .enter-nikname__input_password,
+  .reset-email__input_password,
+  .reset-password__input_password,
+  .reset-nikname__input_password,
+  .reg-email__input_password,
+  .reg-password__input_password,
+  .reg-nikname__input_password {
+    margin-left: calc(30px + 72 * ((100vw - 320px) / 1600));
+  }
+
+  .enter-email__input_nik,
+  .enter-password__input_nik,
+  .enter-nikname__input_nik,
+  .reset-email__input_nik,
+  .reset-password__input_nik,
+  .reset-nikname__input_nik,
+  .reg-email__input_nik,
+  .reg-password__input_nik,
+  .reg-nikname__input_nik {
+    margin-left: calc(15px + 40 * ((100vw - 320px) / 1600));
+  }
+
+  .enter-passwordForm,
+  .reset-passwordForm,
+  .reg-passwordForm {
+    margin-bottom: calc(20px + 13 * ((100vw - 320px) / 1600));
+  }
+
+  .enter-passwordForm__text,
+  .reset-passwordForm__text,
+  .reg-passwordForm__text {
+    font-size: calc(12px + 4 * ((100vw - 320px) / 1600));
+  }
+
+  .enter-password__name,
+  .reset-password__name,
+  .reg-password__name {
+    font-size: calc(18px + 6 * ((100vw - 320px) / 1600));
+    margin-right: calc(20px + 10 * ((100vw - 320px) / 1600));
+  }
+
+  .enter-password__input,
+  .reset-password__input,
+  .reg-password__input {
+    padding-top: calc(5px + 5 * ((100vw - 320px) / 1600));
+    padding-bottom: calc(5px + 5 * ((100vw - 320px) / 1600));
+    padding-left: calc(10px + 5 * ((100vw - 320px) / 1600));
+    padding-right: calc(10px + 5 * ((100vw - 320px) / 1600));
+    width: calc(150px + 300 * ((100vw - 320px) / 1600));
+  }
+
+  .enter-chekbox,
+  .reset-chekbox,
+  .reg-chekbox {
+    margin-bottom: calc(10px + 10 * ((100vw - 320px) / 1600));
+  }
+
+  .enter-chekbox__text,
+  .reset-chekbox__text,
+  .reg-chekbox__text {
+    font-size: calc(12px + 4 * ((100vw - 320px) / 1600));
+  }
+
+  .enter-registration,
+  .reset-registration,
+  .reg-registration {
+    margin-bottom: calc(20px + 20 * ((100vw - 320px) / 1600));
+    font-size: calc(12px + 4 * ((100vw - 320px) / 1600));
+  }
+
+  .enter-registration__link,
+  .reset-registration__link,
+  .reg-registration__link {
+    margin-left: calc(10px + 5 * ((100vw - 320px) / 1600));
+  }
+
+  .enter-cross,
+  .reset-cross,
+  .reg-cross {
+    position: absolute;
+    top: -5px;
+    right: 50px;
+    width: 30px;
+    height: 25px;
   }
 }
 

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index Food</title>
 
-    <link rel="stylesheet" href="css/style.min.css?_v=20220704183834">
+    <link rel="stylesheet" href="css/style.min.css?_v=20220705174632">
 </head>
 <body>
     <main>
@@ -335,7 +335,7 @@
 </footer>
 
 
-<script src="js/index.min.js?_v=20220704183834" defer></script>
+<script src="js/index.min.js?_v=20220705174632" defer></script>
 
 
     <div class="enter hidden">
@@ -355,7 +355,7 @@
         
         <form action="#" class="enter-form">
             <div class="enter-email">
-                <label for="email" class="enter-email__name">Email:</label>
+                <label for="email" class="enter-email__name enter-email__name_in">Email:</label>
                 <input type="email" class="enter-email__input" id="email">
             </div>
             
@@ -385,6 +385,88 @@
     </div>
 </div>
 
+    <div class="reset hidden">
+    <div class="reset-content">
+
+        <div class="reset-header">
+            <p class="reset-content__name">Сбросить пароль</p>
+
+            <div class="enter-cross">
+                <button class="nav">
+                    <span></span>
+                    <span></span>
+                    <!-- <span></span> -->
+                </button>
+            </div>
+        </div>
+        
+        <form action="#" class="reset-form">
+            <div class="reset-password">
+                <label for="password" class="reset-password__name">Старый пароль:</label>
+                <input type="password" class="reset-password__input" id="password">
+            </div>
+            
+            <div class="resest-passwordForm">
+                <div class="reset-password">
+                    <label for="password" class="reset-password__name">Новый пароль: </label>
+                    <input type="password" class="reset-password__input reset-password__input_second" id="password">
+                </div>
+            </div>
+            
+        </form>
+        <div class="reset-footer">
+            <button class="button button_orange">Войти</button>
+        </div>
+    </div>
+</div>
+    <div class="reg hidden">
+    <div class="reg-content">
+
+        <div class="reg-header">
+            <p class="reg-content__name">Регистрация</p>
+
+            <div class="enter-cross">
+                <button class="nav">
+                    <span></span>
+                    <span></span>
+                    <!-- <span></span> -->
+                </button>
+            </div>
+        </div>
+        
+        <form action="#" class="reg-form">
+            <div class="enter-email">
+                <label for="email" class="reg-email__name">Email:</label>
+                <input type="email" class="reg-email__input reg-email__input_email" id="email">
+            </div>
+
+            <div class="reg-password">
+                <label for="password" class="reg-password__name">Password:</label>
+                <input type="password" class="reg-password__input reg-email__input_password" id="password">
+            </div>    
+
+            <div class="reg-password">
+                <label for="password" class="reg-password__name">Повторите пароль:</label>
+                <input type="password" class="reg-password__input" id="password">
+            </div>
+
+            <div class="reg-nikname">
+                <label for="email" class="reg-nikname__name">Никнейм:</label>
+                <input type="email" class="reg-nikname__input reg-nikname__input_nik" id="email">
+            </div>
+
+            <div class="reg-registration">
+                <p class="reg-registration__text">Есть аккаутн?</p>
+                <a href="#" class="reg-registration__link regEnter">Войти</a>
+            </div>
+
+            
+        </form>
+        <div class="enter-footer">
+            <button class="button button_orange">Войти</button>
+        </div>
+    </div>
+</div>
     
 </body>
 </html>

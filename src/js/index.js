@@ -42,9 +42,16 @@ foodCardDescription.forEach((item)=>{
 
 
 //modal enter
-let enterButton = document.querySelector(".button_header");
+const enterButton = document.querySelector(".button_header");
 const modalEnter = document.querySelector(".enter");
-const crossButton = document.querySelector(".enter-cross");
+const crossButton = document.querySelectorAll(".enter-cross");
+
+const resetForm = document.querySelector(".reset");
+const forgetPassword = document.querySelector(".enter-passwordForm__text");
+
+const regForm = document.querySelector(".reg");
+const regEnter = document.querySelector(".regEnter");
+const enterRegistrationLink = document.querySelector(".enter-registration__link");
 
 const disableScroll = ()=>{
   const widthScroll = window.innerWidth - document.body.offsetWidth;  //ширина окна минус ширина страницы для получения ширины скролла
@@ -76,14 +83,31 @@ function openModal(){
   disableScroll();
 }
 function closeModal(){
-  modalEnter.classList.toggle("active");
+  modalEnter.classList.remove("active");
+  resetForm.classList.remove("active");
+  regForm.classList.remove("active");
   enableScroll();
 }
 
-// if(enterButton){ 
-//   enterButton.addEventListener("click", openModal);
-//   console.log("some test")
-// }
+const forget = ()=>{
+  resetForm.classList.toggle("active");
+  modalEnter.classList.toggle("active");
+}
+
+const registration = () => {
+  regForm.classList.add("active");
+  modalEnter.classList.remove("active");
+}
+const regBack = ()=>{
+  regForm.classList.remove("active");
+  modalEnter.classList.add("active");
+}
+
+crossButton.forEach(item => {
+  item.addEventListener("click", closeModal);
+})
 
 enterButton.addEventListener("click", openModal);
-crossButton.addEventListener("click", closeModal);
+forgetPassword.addEventListener("click", forget);
+enterRegistrationLink.addEventListener("click", registration);
+regEnter.addEventListener("click", regBack);

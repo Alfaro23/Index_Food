@@ -6,7 +6,7 @@
     transform: translateY(0px);
     transition: 2s;
 }
-.enter{
+.enter, .reset, .reg{
     
     transition: 2s;
     position: fixed;
@@ -39,7 +39,7 @@
         margin: 0 130px;
         
     }
-    &-email{
+    &-email, &-password, &-nikname{
         margin-bottom: 37px;
         display: flex;
         align-items: center;
@@ -54,9 +54,18 @@
             border: 1px solid #F47322;
             border-radius: 10px;
             background: #fff;
-            max-width: 450px;
             padding: 10px 15px;
             width: 450px;
+
+            &_email{
+                margin-left: 98px;
+            }
+            &_password{
+                margin-left: 102px;
+            }
+            &_nik{
+                margin-left: 55px;
+            }
         }
     }
     &-passwordForm{
@@ -91,7 +100,6 @@
             border: 1px solid #F47322;
             border-radius: 10px;
             background: #fff;
-            max-width: 450px;
             padding: 10px 15px;
             width: 450px;
         }
@@ -144,15 +152,23 @@
 
 }
 
+.reset{
+    &-password{
+    
+        &__input{
+            &_second{
+                margin-left: 10px;
+                
+            }
+        }
+    }
+}
+
 .nav{
     background-color:transparent;
     border-style:none;
     outline: none;
     cursor: pointer;
-
-    // &:hover{
-    //     transform: rotate(180deg);
-    // }
 }
 
 .nav span{
@@ -167,18 +183,128 @@
         transform: rotate(90deg);
     }
 }
-// .nav span:nth-child(){
-    
-// }
 .nav span:nth-child(1){
     transform: rotate(140deg);
-    // &:hover{
-    //     transform: rotate(40deg);
-    // }
 }
 .nav span:nth-child(2){
     transform: rotate(40deg);
-    // &:hover{
-    //     transform: rotate(140deg);
+}
+
+@media (max-width: 1000px){
+    .reg{
+        &-password{
+            &__name{
+                max-width: 120px;
+            }
+        }
+    }
+    .enter, .reset, .reg{
+        // max-width: 850px;
+        // @include adaptiveSize("max-width", 850, 400,0);
+    
+        &-content{
+            @include adaptiveSize("padding-top", 35, 20,0);
+            @include adaptiveSize("padding-bottom", 60, 40,0);
+            @include adaptiveSize("padding-left", 36, 20,0);
+    
+            &__name{
+                @include adaptiveSize("margin-bottom", 70, 50,0);
+                @include adaptiveSize("font-size", 32, 20,0);
+            }
+        }
+        &-form{
+            @include adaptiveSize("margin-left", 130, 0,0);
+            @include adaptiveSize("margin-right", 130, 0,0);
+        }
+        &-email, &-password, &-nikname{
+            @include adaptiveSize("margin-bottom", 37, 20,0);
+            
+            
+            &__name{
+                @include adaptiveSize("font-size", 24, 18,0);
+                @include adaptiveSize("margin-right", 80, 40,0);
+
+                &_in{
+                    @include adaptiveSize("margin-right", 80, 50,0);
+                }
+            }
+            &__input{
+                @include adaptiveSize("padding-top", 10, 5,0);
+                @include adaptiveSize("padding-bottom", 10, 5,0);
+                @include adaptiveSize("padding-left", 15, 10,0);
+                @include adaptiveSize("padding-right", 15, 10,0);
+                @include adaptiveSize("width", 450, 150,0);
+    
+                &_email{
+                    @include adaptiveSize("margin-left", 98, 45,0);
+                }
+                &_password{
+                    @include adaptiveSize("margin-left", 102, 30,0);
+                }
+                &_nik{
+                    @include adaptiveSize("margin-left", 55, 15,0);
+                }
+            }
+        }
+        &-passwordForm{
+            @include adaptiveSize("margin-bottom", 33, 20,0);
+    
+            &__text{
+                @include adaptiveSize("font-size", 16, 12,0);
+            }
+        }
+    
+        &-password{
+            
+            &__name{
+                @include adaptiveSize("font-size", 24, 18,0);
+                @include adaptiveSize("margin-right", 30, 20,0);
+            }
+            &__input{
+                @include adaptiveSize("padding-top", 10, 5,0);
+                @include adaptiveSize("padding-bottom", 10, 5,0);
+                @include adaptiveSize("padding-left", 15, 10,0);
+                @include adaptiveSize("padding-right", 15, 10,0);
+                @include adaptiveSize("width", 450, 150,0);
+            }
+        }
+    
+        &-chekbox{
+            @include adaptiveSize("margin-bottom", 20, 10,0);
+    
+            &__text{
+                @include adaptiveSize("font-size", 16, 12,0);
+            }
+        }
+    
+        &-registration{
+            @include adaptiveSize("margin-bottom", 40, 20,0);
+            @include adaptiveSize("font-size", 16, 12,0);
+    
+            &__link{
+                @include adaptiveSize("margin-left", 15, 10,0);
+            }
+        }
+        
+        &-cross{
+            position: absolute;
+            top: -5px;
+            right: 50px;
+            width: 30px;
+            height: 25px;
+        }
+    
+    }
+    
+    // .reset{
+    //     &-password{
+        
+    //         &__input{
+    //             &_second{
+    //                 margin-left: 10px;
+                    
+    //             }
+    //         }
+    //     }
     // }
 }
