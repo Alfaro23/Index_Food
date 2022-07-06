@@ -3333,6 +3333,18 @@ body.no-scroll {
     margin-right: calc(50px + 30 * ((100vw - 320px) / 1600));
   }
 
+  .enter-email__name_repit,
+  .enter-password__name_repit,
+  .enter-nikname__name_repit,
+  .reset-email__name_repit,
+  .reset-password__name_repit,
+  .reset-nikname__name_repit,
+  .reg-email__name_repit,
+  .reg-password__name_repit,
+  .reg-nikname__name_repit {
+    margin-right: 0;
+  }
+
   .enter-email__input,
   .enter-password__input,
   .enter-nikname__input,
@@ -3383,6 +3395,18 @@ body.no-scroll {
   .reg-password__input_nik,
   .reg-nikname__input_nik {
     margin-left: calc(15px + 40 * ((100vw - 320px) / 1600));
+  }
+
+  .enter-email__input_repit,
+  .enter-password__input_repit,
+  .enter-nikname__input_repit,
+  .reset-email__input_repit,
+  .reset-password__input_repit,
+  .reset-nikname__input_repit,
+  .reg-email__input_repit,
+  .reg-password__input_repit,
+  .reg-nikname__input_repit {
+    margin-left: calc(40px + -40 * ((100vw - 320px) / 1600));
   }
 
   .enter-passwordForm,
@@ -3444,7 +3468,7 @@ body.no-scroll {
   .reg-cross {
     position: absolute;
     top: -5px;
-    right: 50px;
+    right: calc(25px + 25 * ((100vw - 320px) / 1600));
     width: 30px;
     height: 25px;
   }
@@ -3519,6 +3543,20 @@ body.no-scroll {
   }
 }
 
+@media (max-width: 750px) {
+  .reg-email__input_repit,
+  .reg-password__input_repit,
+  .reg-nikname__input_repit {
+    margin-left: calc(30px + -30 * ((100vw - 320px) / 1600));
+  }
+
+  .reg-email__name_repit,
+  .reg-password__name_repit,
+  .reg-nikname__name_repit {
+    margin-left: calc(0px + 5 * ((100vw - 320px) / 1600));
+  }
+}
+
 @media (max-width: 700px) {
   .product-content {
     -webkit-box-orient: vertical;
@@ -3531,6 +3569,14 @@ body.no-scroll {
 @media screen and (max-width: 650px) {
   .benefits-card {
     width: 34%;
+  }
+}
+
+@media (max-width: 650px) {
+  .reg-email__input_repit,
+  .reg-password__input_repit,
+  .reg-nikname__input_repit {
+    margin-left: calc(20px + -20 * ((100vw - 320px) / 1600));
   }
 }
 
@@ -3585,6 +3631,14 @@ body.no-scroll {
   }
 }
 
+@media (max-width: 550px) {
+  .reg-email__input_repit,
+  .reg-password__input_repit,
+  .reg-nikname__input_repit {
+    margin-left: calc(10px + -10 * ((100vw - 320px) / 1600));
+  }
+}
+
 @media screen and (max-width: 500px) {
   .header__search {
     display: none;
@@ -3636,6 +3690,14 @@ body.no-scroll {
   }
 }
 
+@media (max-width: 450px) {
+  .reg-email__input_repit,
+  .reg-password__input_repit,
+  .reg-nikname__input_repit {
+    margin-left: calc(0px + 0 * ((100vw - 320px) / 1600));
+  }
+}
+
 @media screen and (max-width: 420px) {
   .name-categories__text:not(:last-child) {
     margin-right: 10px;
@@ -3653,6 +3715,14 @@ body.no-scroll {
 
   .logo__img_header {
     display: block;
+  }
+}
+
+@media (max-width: 400px) {
+  .reg-email__input_repit,
+  .reg-password__input_repit,
+  .reg-nikname__input_repit {
+    margin-left: calc(0px + 5 * ((100vw - 320px) / 1600));
   }
 }
 

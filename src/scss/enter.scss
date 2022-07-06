@@ -191,6 +191,7 @@
 }
 
 @media (max-width: 1000px){
+
     .reg{
         &-password{
             &__name{
@@ -198,10 +199,9 @@
             }
         }
     }
+ 
     .enter, .reset, .reg{
-        // max-width: 850px;
-        // @include adaptiveSize("max-width", 850, 400,0);
-    
+        
         &-content{
             @include adaptiveSize("padding-top", 35, 20,0);
             @include adaptiveSize("padding-bottom", 60, 40,0);
@@ -227,6 +227,9 @@
                 &_in{
                     @include adaptiveSize("margin-right", 80, 50,0);
                 }
+                &_repit{
+                    margin-right: 0;
+                }
             }
             &__input{
                 @include adaptiveSize("padding-top", 10, 5,0);
@@ -243,6 +246,9 @@
                 }
                 &_nik{
                     @include adaptiveSize("margin-left", 55, 15,0);
+                }
+                &_repit{
+                    @include adaptiveSize("margin-left", 0, 40,0);
                 }
             }
         }
@@ -289,22 +295,72 @@
         &-cross{
             position: absolute;
             top: -5px;
-            right: 50px;
+            @include adaptiveSize("right", 50, 25,0);
             width: 30px;
             height: 25px;
         }
     
     }
-    
-    // .reset{
-    //     &-password{
-        
-    //         &__input{
-    //             &_second{
-    //                 margin-left: 10px;
-                    
-    //             }
-    //         }
-    //     }
-    // }
+}
+
+@media (max-width: 750px){
+    .reg{
+        &-email, &-password, &-nikname{
+            &__input{
+                &_repit{
+                    @include adaptiveSize("margin-left", 0, 30,0);
+                }
+            }
+                &__name{
+                    &_repit{
+                        @include adaptiveSize("margin-left", 5, 0,0);
+                        // margin-right: 5;
+                    }
+                }
+        }
+    }
+}
+@media (max-width: 650px){
+    .reg{
+        &-email, &-password, &-nikname{
+            &__input{
+                &_repit{
+                    @include adaptiveSize("margin-left", 0, 20,0);
+                }
+            }
+        }
+    }
+}
+@media (max-width: 550px){
+    .reg{
+        &-email, &-password, &-nikname{
+            &__input{
+                &_repit{
+                    @include adaptiveSize("margin-left", 0, 10,0);
+                }
+            }
+        }
+    }
+}
+@media (max-width: 450px){
+    .reg{
+        &-email, &-password, &-nikname{
+            &__input{
+                &_repit{
+                    @include adaptiveSize("margin-left", 0, 0,0);
+                }
+            }
+        }
+    }
+}
+@media (max-width: 400px){
+    .reg{
+        &-email, &-password, &-nikname{
+            &__input{
+                &_repit{
+                    @include adaptiveSize("margin-left", 5, 0,0);
+                }
+            }
+        }
+    }
 }
