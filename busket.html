@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Корзина</title>
 
-    <link rel="stylesheet" href="css/style.min.css?_v=20220705174632">
+    <link rel="stylesheet" href="css/style.min.css?_v=20220706144111">
 </head>
 <body>
     <div class="container">
@@ -162,9 +162,12 @@
 </footer>
 
 
-<script src="js/index.min.js?_v=20220705174632" defer></script>
-    <div class="enter hidden">
-    <div class="enter-content">
+<script src="js/index.min.js?_v=20220706144111" defer></script>
+    <div class="enter hidden" >
+
+    <div class="substrate"></div>
+
+    <div class="enter-content" id="test">
 
         <div class="enter-header">
             <p class="enter-content__name">Вход</p>
@@ -210,7 +213,7 @@
     </div>
 </div>
 
-    <div class="reset hidden">
+    <div class="reset hidden substrate">
     <div class="reset-content">
 
         <div class="reset-header">
@@ -244,7 +247,7 @@
         </div>
     </div>
 </div>
-    <div class="reg hidden">
+    <div class="reg hidden substrate">
     <div class="reg-content">
 
         <div class="reg-header">
@@ -271,8 +274,8 @@
             </div>    
 
             <div class="reg-password">
-                <label for="password" class="reg-password__name">Повторите пароль:</label>
-                <input type="password" class="reg-password__input" id="password">
+                <label for="password" class="reg-password__name reg-password__name_repit">Повторите пароль:</label>
+                <input type="password" class="reg-password__input  reg-password__input_repit" id="password">
             </div>
 
             <div class="reg-nikname">
